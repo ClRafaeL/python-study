@@ -1,6 +1,6 @@
-array = ['r', 'a', 'f', 'a']
+array = ['c', 'l', 'a']
 
-array2 = "rafael"
+array2 = "claudio"
 
 text = "1.5"
 
