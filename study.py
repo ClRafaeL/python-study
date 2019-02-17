@@ -1,5 +1,3 @@
-# , -> .
-
 # printMenu -> camelCase : js, json
 # print_menu -> snake_case : python, c
 # print-menu -> kebob-case : dir, repo
@@ -7,8 +5,10 @@
 def print_menu():
     print('Menu Principal')
     print('1 - Soma')
-    print('2 - Tabuada')
+    print('2 - multiplicacao')
     print('3 - soma e multiplica')
+    print('4 - tabuada')
+    print('5 - loteria')
     print('0 - Sair')
 
 def verify(opt):
@@ -19,9 +19,10 @@ def verify(opt):
         print('Resultado da soma : ', result)
 
     elif opt == 2:
-        a = convert_float(convert_dot(input('Digite um numero para ser Multiplicado de 0 a 10:')))
-        result = multiply(a, a)
-        print('{} x {} = {}'.format(a, a, result))
+        a = convert_float(convert_dot(input('Digite um numero :')))
+        b = convert_float(convert_dot(input('Digite outro numero :')))
+        result = multiply(a, b)
+        print('{} x {} = {}'.format(a, b, result))
 
     elif opt == 3:
         a = convert_float(convert_dot(input('Digite um numero :')))
@@ -53,10 +54,11 @@ def convert_dot(text):
             resp += i
     return resp
 
-opt = 1 
-while(not opt == 0):
-    print_menu()
-    opt = convert_int(input('Escolha uma opcao : '))
+def run():
+    opt = 1 
+    while(not opt == 0):
+        print_menu()
+        opt = convert_int(input('Escolha uma opcao : '))
 
-    verify(opt)
+        verify(opt)
    
