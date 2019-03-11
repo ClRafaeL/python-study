@@ -1,7 +1,6 @@
-import Celular
-import Calculadora
-import Read_File
-import Matriz
+from Celular import Celular
+from Calculadora import Calculadora
+from Matriz import Matriz
 
 #-----------------------------------------------OBJ_CELULAR----------------------------------------------
 
@@ -29,11 +28,6 @@ print('')
 print(s.table(10))
 print('')
 
-#-----------------------------------------------LER_ARQUIVO---------------------------------------------
-
-txt = Read_File()
-
-print(txt.read_arq('files\dados.txt', 'r'))
-print('')
-
 #-----------------------------------------------MATRIZ--------------------------------------------------
+
+matriz = Matriz()
